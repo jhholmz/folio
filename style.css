@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    border: solid 2px;
+    /*border: solid 2px;*/
     color: var(--textcolor);
 }
 
@@ -20,11 +20,11 @@ h1 {
     font-family: var(--ff);
     color: var(--textcolor);
     font-weight: bold;
-    font-size: 64px;
+    font-size: 80px;
     width: fit-content;
     margin-top: 250px;
     margin-left: 50px;
-    border: solid 2px;
+    /*border: solid 2px;*/
     margin-bottom: 0px;
 }
 
@@ -37,7 +37,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
     line-height: 2;
-    border: solid 2px;
+    /*border: solid 2px;*/
     
     
 }
@@ -55,13 +55,31 @@ ul {
     list-style: none;
 }
 
-.hero {
+.scroller {
+    width: 1000px;
+    /*border: solid 2px;*/
+    padding-left: 500px;
+    margin-top: 50px;
+    max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+
+
+.scroller__inner {
+    /*border: solid 2px black;*/
     display: flex;
-    border: solid 2px;
-    color: var(--textcolor);
-    width: 100%;
-    justify-content: center;  
-    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+}
+
+img {
+    width: 500px;
 }
 
 h2 {
