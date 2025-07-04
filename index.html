@@ -7,23 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <aside class="sidebar">
         <h1>James Holmes</h1>
-        <div class="menu">
+        <!--<h2></h2>-->
+        <nav class="menu">
             <ul>
                 <li><a href="https://jamesholmes.pixieset.com/">Galleries</a></li>
                 <!--<li><a href="#">Webdev</a></li>
                 <li><a href="#">Design</a></li>-->
                 <li><a href="#">Contact</a></li>
             </ul>    
+        </nav>
+    </aside>
+    <main class="main-content">
+        <div class="scroller">
+            <div class="scroller__inner">
+                <img src="assets/Ben M32 wallride.jpg" alt="">
+                <img src="assets/harrytbog.jpg" alt="">
+                <img src="assets/RiverRun(1of30).jpg" alt="">
+                <img src="assets/Ben crank arm.jpg" alt="">
+                <img src="assets/RiverRun(20of30).jpg" alt="">
+                <img src="assets/JamesHolmesPhoto - CookieJam-14.jpg" alt="">
+                <img src="assets/Harrywallride.jpg" alt="">
+            </div>
         </div>
-    </div>
-    <div class="scroller">
-        <div class="scroller__inner">
-            <img src="assets/Ben M32 wallride.jpg" alt="">
-            <img src="assets/Ben crank arm.jpg" alt="">
-            <img src="assets/JamesHolmesPhoto - CookieJam-14.jpg" alt="">
+        <div id="lightbox" class="lightbox hidden">
+            <img id="lightbox-img" src="" alt="">
         </div>
-    </div>
+        <script src="lightbox.js" defer></script>
+    </main>
 </body>
 </html>
