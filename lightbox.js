@@ -21,3 +21,5 @@ document.addEventListener('keydown', (e) => {
     lightboxImg.src = '';
     }
 });
+
+

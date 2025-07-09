@@ -18,23 +18,48 @@
                 <li><a href="#">Contact</a></li>
             </ul>    
         </nav>
+        <div id="contact-modal" class="modal hidden">
+            <div class="modal-content">
+                <button class="close-btn">&times;</button>
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/xyzjqvky" method="POST" id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+                </form>
+                <p id="form-message" class="hidden">Thanks! Your message has been sent.</p>
+            </div>
+        </div>
     </aside>
     <main class="main-content">
         <div class="scroller">
             <div class="scroller__inner">
                 <img src="assets/Ben M32 wallride.jpg" alt="">
+                <img src="assets/barspuddle.jpg" alt="">
                 <img src="assets/harrytbog.jpg" alt="">
+                <img src="assets/trails.jpg" alt="">
                 <img src="assets/RiverRun(1of30).jpg" alt="">
                 <img src="assets/Ben crank arm.jpg" alt="">
                 <img src="assets/RiverRun(20of30).jpg" alt="">
                 <img src="assets/JamesHolmesPhoto - CookieJam-14.jpg" alt="">
                 <img src="assets/Harrywallride.jpg" alt="">
+                <img src="assets/purkrun140625(63of80).jpg" alt="">
+                <img src="assets/chrisdtable.jpg" alt="">
+                <img src="assets/CookieJam-JamesHolmesPhoto(74of125).jpg" alt="">
             </div>
         </div>
         <div id="lightbox" class="lightbox hidden">
             <img id="lightbox-img" src="" alt="">
         </div>
         <script src="lightbox.js" defer></script>
+        <script src="contact.js" defer></script>
     </main>
 </body>
 </html>
